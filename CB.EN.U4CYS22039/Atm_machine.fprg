@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22039"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:00:05 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NjsyMDIyLTExLTE4OzA4OjU4OjAyIEFNOzMwNzU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NjsyMDIyLTExLTE4OzExOjAwOjA1IEFNOzMxOzMyMTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="banknumber" type="Integer" array="False" size=""/>
+            <comment text="bank number input&#13;&#10;"/>
+            <output expression="&quot;ENTER YOUR BANK'S ACCOUNT NUMBER&quot;" newline="True"/>
+            <input variable="banknumber"/>
+            <declare name="pin" type="Integer" array="False" size=""/>
+            <comment text="atm pin&#13;&#10;"/>
+            <declare name="balance" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER YOUR BANK BALANCE&quot;" newline="True"/>
+            <input variable="balance"/>
+            <output expression="&quot;ENTER YOUR SECURITY PIN&quot;" newline="True"/>
+            <input variable="pin"/>
+            <comment text="checking the pin is correct or not"/>
+            <if expression="pin==2004">
+                <then>
+                    <if expression="balance&gt;500">
+                        <then/>
+                        <else>
+                            <output expression="&quot;INSUFFICIENT AMOUNT&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <comment text="asking the required amount"/>
+                    <declare name="requiredamount" type="Integer" array="False" size=""/>
+                    <output expression="&quot;ENTER YOUR REQUIRED AMOUNT&quot;" newline="True"/>
+                    <input variable="requiredamount"/>
+                    <if expression="requiredamount&lt;=balance">
+                        <then>
+                            <comment text="asking the secret pin"/>
+                            <declare name="secretpin" type="Integer" array="False" size=""/>
+                            <output expression="&quot;enter your secret pin&quot;" newline="True"/>
+                            <input variable="secretpin"/>
+                            <if expression="secretpin==0408">
+                                <then>
+                                    <output expression="&quot;TRANSACTION COMPLETED , PLEASE COLLECT YOUR AMOUNT&quot;" newline="True"/>
+                                    <comment text="bank balance"/>
+                                    <declare name="bankbalance" type="Real" array="False" size=""/>
+                                    <assign variable="bankbalance" expression="balance - requiredamount"/>
+                                    <output expression="&quot;YOUR BANK BALANCE AFTER TRANSACTION IS&quot; &amp;bankbalance" newline="True"/>
+                                    <output expression="&quot;THANK YOU FOR USING OUR BANK&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;TRANSACTION CANCELLED DUE TO WRONG PIN&quot;" newline="True"/>
+                                    <comment text="wrong pin&#13;&#10;"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <comment text="insufficient balance"/>
+                            <output expression="&quot;INSUFFICIENT FUNDS&quot;" newline="True"/>
+                            <output expression="&quot;YOUR CURRENT BANK BALANCE IS &quot; &amp;balance" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;TRANSACTION CANCELLED DUE TO WRONG PIN&quot;" newline="True"/>
+                    <comment text="wrong pin leads to exit"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

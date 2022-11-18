@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22039"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:23:09 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NjsyMDIyLTExLTE4OzA5OjQ4OjM5IEFNOzMwODU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NjsyMDIyLTExLTE4OzA5OjQ4OjQxIEFNOzE7Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NjsyMDIyLTExLTE4OzA4OjU4OjAyIEFNO0F0bV9tYWNoaW5lLmZwcmc7Nzk2Ng=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NjsyMDIyLTExLTE4OzEwOjIzOjA5IEFNOzM0OzMyMjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;WELCOME TO NOTHING BANK&quot;" newline="True"/>
+            <output expression="&quot; WHAT DO YOU WANT TO DO &quot;" newline="True"/>
+            <output expression="&quot; 1. WITHDRAW MONEY &quot;" newline="True"/>
+            <output expression="&quot;2. CHECK YOUR BANK BALANCE&quot;" newline="True"/>
+            <output expression="&quot;3. DEPOSIT MONEY IN YOUR ACCOUNT &quot;" newline="True"/>
+            <output expression="&quot;4. CHANGE YOUR PIN NUMBER&quot;" newline="True"/>
+            <output expression="&quot; PLEASE ENTER THE  TASK NUMBER TO PROCEED &quot;" newline="True"/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <if expression="x==1">
+                <then>
+                    <declare name="a" type="String" array="False" size=""/>
+                    <declare name="b" type="Integer" array="False" size=""/>
+                    <output expression="&quot;ENTER YOUR NAME&quot;" newline="True"/>
+                    <input variable="a"/>
+                    <output expression="&quot;ENTER YOUR BANK'S ACCOUNT NUMBER&quot;" newline="True"/>
+                    <input variable="b"/>
+                    <declare name="c" type="Integer" array="False" size=""/>
+                    <output expression="&quot;ENTER YOUR SECURITY PIN&quot;" newline="True"/>
+                    <input variable="c"/>
+                    <if expression="c==2004">
+                        <then>
+                            <declare name="d" type="Integer" array="False" size=""/>
+                            <output expression="&quot;ENTER YOUR REQUIRED AMOUNT&quot;" newline="True"/>
+                            <input variable="d"/>
+                            <if expression="d&lt;=500">
+                                <then>
+                                    <declare name="e" type="Integer" array="False" size=""/>
+                                    <output expression="&quot;enter your secret pin&quot;" newline="True"/>
+                                    <input variable="e"/>
+                                    <if expression="e==0408">
+                                        <then>
+                                            <output expression="&quot;TRANSACTION COMPLETED , PLEASE COLLECT YOUR AMOUNT&quot;" newline="True"/>
+                                            <declare name="f" type="Real" array="False" size=""/>
+                                            <assign variable="f" expression="500 - d"/>
+                                            <output expression="&quot;YOUR BANK BALANCE AFTER TRANSACTION IS&quot; &amp;f" newline="True"/>
+                                            <output expression="&quot;THANK YOU FOR USING OUR BANK&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;TRANSACTION CANCELLED DUE TO WRONG PIN&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;INSUFFICIENT FUNDS&quot;" newline="True"/>
+                                    <output expression="&quot;YOUR CURRENT BANK BALANCE IS 500 &quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;TRANSACTION CANCELLED DUE TO WRONG PIN&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="x==2">
+                        <then>
+                            <declare name="y" type="Integer" array="False" size=""/>
+                            <output expression="&quot;ENTER YOUR BANK'S ACCOUNT NUMBER&quot;" newline="True"/>
+                            <input variable="y"/>
+                            <declare name="z" type="Integer" array="False" size=""/>
+                            <output expression="&quot;ENTER YOUR SECURITY PIN&quot;" newline="True"/>
+                            <input variable="z"/>
+                            <if expression="z==2004">
+                                <then>
+                                    <output expression="&quot;YOUR BANK BALANCE IS 500&quot;" newline="True"/>
+                                    <output expression="&quot;THANK YOU FOR USING OUR BANK&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;WRONG PIN , PLEASE ENTER THE CORRECT PIN&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="X==3">
+                                <then>
+                                    <declare name="g" type="Integer" array="False" size=""/>
+                                    <output expression="&quot;ENTER YOUR BANK'S ACCOUNT NUMBER&quot;" newline="True"/>
+                                    <input variable="g"/>
+                                    <declare name="h" type="Integer" array="False" size=""/>
+                                    <output expression="&quot;ENTER YOUR SECURITY PIN&quot;" newline="True"/>
+                                    <input variable="h"/>
+                                    <if expression="h==2004">
+                                        <then>
+                                            <declare name="i" type="Integer" array="False" size=""/>
+                                            <output expression="&quot;ENTER THE AMOUNT YOU WANT TO DEPOSIT &quot;" newline="True"/>
+                                            <input variable="i"/>
+                                            <output expression="&quot;YOUR AMOUNT HAS BEEN SUCCESSFULLY DEPOSITED&quot;" newline="True"/>
+                                            <declare name="j" type="Real" array="False" size=""/>
+                                            <assign variable="j" expression="500 + i"/>
+                                            <output expression="&quot; YOUR CURRENT BANK BALANCE IS &quot; &amp;j" newline="True"/>
+                                            <output expression="&quot;THANK YOU FOR USING OUR BANK&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;WRONG PIN , PLEASE ENTER THE CORRECT PIN&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="x==4">
+                                        <then>
+                                            <declare name="k" type="Integer" array="False" size=""/>
+                                            <output expression="&quot;ENTER YOUR BANK'S ACCOUNT NUMBER&quot;" newline="True"/>
+                                            <input variable="k"/>
+                                            <declare name="l" type="Integer" array="False" size=""/>
+                                            <output expression="&quot; ENTER YOUR OLD PIN NUMBER &quot;" newline="True"/>
+                                            <input variable="l"/>
+                                            <if expression="l==2004">
+                                                <then>
+                                                    <declare name="m" type="Integer" array="False" size=""/>
+                                                    <output expression="&quot;ENTER YOUR NEW PIN NUMBER&quot;" newline="True"/>
+                                                    <input variable="m"/>
+                                                    <output expression="&quot;YOUR PIN HAS BEEN SUCCESSFULLY CHANGED&quot;" newline="True"/>
+                                                    <output expression="&quot;THANK YOU FOR USING OUR BANK&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;WRONG PIN , PLEASE ENTER THE CORRECT PIN&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
