@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sanju"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 07:30:12 PM"/>
+        <attribute name="created" value="c2FuanU7REVTS1RPUC1SRE1IMlJLOzIwMjItMTItMDI7MDc6MjA6MDcgUE07MjkwNQ=="/>
+        <attribute name="edited" value="c2FuanU7REVTS1RPUC1SRE1IMlJLOzIwMjItMTItMDI7MDc6MzA6MTIgUE07NzszMDE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to know the number of prime numbers "/>
+            <declare name="a, number, i" type="Integer" array="False" size=""/>
+            <declare name="prime" type="Boolean" array="False" size=""/>
+            <output expression="&quot; enter the number &quot;" newline="True"/>
+            <input variable="number"/>
+            <for variable="a" start="2" end="number" direction="inc" step="1">
+                <comment text="condition for a prime number "/>
+                <assign variable="prime" expression="true"/>
+                <for variable="i" start="2" end="a - 1" direction="inc" step="1">
+                    <comment text="since the remainder should not be zero"/>
+                    <if expression="a % i == 0">
+                        <then>
+                            <assign variable="prime" expression="false"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="prime == true">
+                    <then>
+                        <output expression="a" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
