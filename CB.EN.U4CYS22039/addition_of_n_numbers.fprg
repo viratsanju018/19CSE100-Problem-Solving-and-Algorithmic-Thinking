@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22039"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:59:14 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzA5OjU0OjI0IEFNOzMwNzE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzA5OjU5OjE0IEFNOzE1OzMyMzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="sum of n natural numbers "/>
+            <declare name="number, sum, i" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <output expression="&quot;enter the value of number &quot;" newline="True"/>
+            <input variable="number"/>
+            <for variable="i" start="1" end="number" direction="inc" step="1">
+                <comment text="to calculate sum"/>
+                <assign variable="sum" expression="sum + i"/>
+            </for>
+            <output expression="&quot;sum of n natural numbers is &quot; &amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

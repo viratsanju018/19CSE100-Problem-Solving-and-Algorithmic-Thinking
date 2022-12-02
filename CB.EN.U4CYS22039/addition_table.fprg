@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22039"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:16:36 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzEwOjA4OjEwIEFNOzMwNTc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzEwOjA4OjE2IEFNOzE7Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzEwOjA0OjA5IEFNO211bHRpcGxpY2F0aW9uX3RhYmxlLmZwcmc7ODk2MA=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzEwOjE2OjM2IEFNOzI1OzMyMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <comment text="declaring variables "/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <comment text="first loop"/>
+                <output expression="&quot;the addition table of&quot; &amp;i&amp;  &quot;is&quot;" newline="True"/>
+                <for variable="j" start="1" end="10" direction="inc" step="1">
+                    <comment text="second loop "/>
+                    <output expression="i&amp; &quot;+&quot; &amp;j&amp; &quot;=&quot; &amp;i+j" newline="True"/>
+                </for>
+            </for>
+            <comment text="addition table"/>
+        </body>
+    </function>
+</flowgorithm>

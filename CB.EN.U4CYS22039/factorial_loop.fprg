@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22039"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:04:06 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzA5OjU5OjI3IEFNOzMwNzk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzA5OjU5OjMwIEFNOzE7Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzA5OjU0OjI0IEFNO2FkZGl0aW9uX29mX25fbnVtYmVycy5mcHJnOzkwNjM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzEwOjA0OjA2IEFNOzMyOzMyMTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="multiplication of n natural numbers "/>
+            <declare name="number, multiply, i" type="Integer" array="False" size=""/>
+            <assign variable="multiply" expression="1"/>
+            <output expression="&quot;enter the value of number &quot;" newline="True"/>
+            <input variable="number"/>
+            <for variable="i" start="1" end="number" direction="inc" step="1">
+                <comment text="to calculate answer"/>
+                <assign variable="multiply" expression="multiply * i"/>
+            </for>
+            <output expression="&quot;multiplication of n natural numbers is &quot; &amp;multiply" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22039"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:19:27 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzEwOjA0OjA5IEFNOzMwNjE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA3NzsyMDIyLTEyLTAyOzEwOjE5OjI3IEFNOzQ3OzMyMzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <comment text="declaring variables "/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <comment text="loop 1"/>
+                <output expression="&quot;the multiplication table of&quot; &amp;i&amp;  &quot;is&quot;" newline="True"/>
+                <for variable="j" start="1" end="10" direction="inc" step="1">
+                    <comment text="loop 2"/>
+                    <output expression="i&amp; &quot;*&quot; &amp;j&amp; &quot;=&quot; &amp;i*j" newline="True"/>
+                </for>
+            </for>
+            <comment text="multiplication table "/>
+        </body>
+    </function>
+</flowgorithm>
