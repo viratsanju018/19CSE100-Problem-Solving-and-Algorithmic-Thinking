@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chennavaram arnav"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:25:04 AM"/>
+        <attribute name="created" value="Y2hlbm5hdmFyYW0gYXJuYXY7QVJOQVZST0ctQ0xTMlFPOzIwMjItMTItMDk7MTA6MjE6MDEgQU07NDA2NQ=="/>
+        <attribute name="edited" value="Y2hlbm5hdmFyYW0gYXJuYXY7QVJOQVZST0ctQ0xTMlFPOzIwMjItMTItMDk7MTA6MzU6MTIgQU07MTs0MTgw"/>
+        <attribute name="edited" value="SFA7REVTS1RPUC1MM1JERUtGOzIwMjItMTItMDk7MTE6MjU6MDQgQU07NzsyNjAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="array" type="Integer" array="True" size="10"/>
+            <declare name="input, freq, x, value" type="Integer" array="False" size=""/>
+            <for variable="x" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter &quot;&amp;x+1&amp;&quot; value&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="array[x]" expression="input"/>
+            </for>
+            <output expression="&quot;Enter the value for which the frequency should be found&quot;" newline="True"/>
+            <input variable="value"/>
+            <assign variable="freq" expression="0"/>
+            <for variable="x" start="0" end="9" direction="inc" step="1">
+                <if expression="array[x]=value">
+                    <then>
+                        <assign variable="freq" expression="freq+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The frequency of the given value in array is &quot;&amp;freq" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

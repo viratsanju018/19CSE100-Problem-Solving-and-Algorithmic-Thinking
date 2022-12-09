@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sanju"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 09:44:41 AM"/>
+        <attribute name="created" value="c2FuanU7REVTS1RPUC1SRE1IMlJLOzIwMjItMTItMDk7MDk6MTQ6NDAgQU07Mjg5OQ=="/>
+        <attribute name="edited" value="c2FuanU7REVTS1RPUC1SRE1IMlJLOzIwMjItMTItMDk7MDk6NDQ6NDEgQU07MjszMDEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="True" size="10"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <for variable="b" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;enter the value&quot;" newline="True"/>
+                <input variable="c"/>
+                <assign variable="a [ b ]" expression="c"/>
+            </for>
+            <output expression="&quot;Array contents&quot;" newline="True"/>
+            <for variable="b" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot; the number assigned at &quot; &amp;b&amp; &quot; is &quot; &amp;a[b]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
