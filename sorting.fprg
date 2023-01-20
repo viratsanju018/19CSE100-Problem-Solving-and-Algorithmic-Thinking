@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22039"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:52:29 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA4MjsyMDIzLTAxLTIwOzA5OjE1OjU2IEFNOzMwNjg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzOTsyMDIyMjNNQVlDMDA4MjsyMDIzLTAxLTIwOzEwOjUyOjI5IEFNOzI2OzMyMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="swapped" type="Boolean" array="False" size=""/>
+            <declare name="n, i, j, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the size of the list&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <comment text="load the array"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;enter the value at the position&quot; &amp;i" newline="True"/>
+                <input variable="j"/>
+                <assign variable="a[i]" expression="j"/>
+            </for>
+            <assign variable="swapped" expression="True"/>
+            <while expression="swapped == true">
+                <assign variable="swapped" expression="False"/>
+                <for variable="i" start="0" end="n-2" direction="inc" step="1">
+                    <if expression="a[i] &lt; a[i+1]">
+                        <then>
+                            <assign variable="b" expression="a[i]"/>
+                            <assign variable="a[i]" expression="a[i+1]"/>
+                            <assign variable="a[i+1]" expression="b"/>
+                            <assign variable="swapped" expression="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </while>
+            <comment text="output sorted array"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
